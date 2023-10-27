@@ -19,6 +19,14 @@ public class personagem{
 
     }
 
+    public personagem(String nome, String especie, int dano,int vida) {
+        this.nome = nome;
+        this.dano = dano;
+        this.especie = especie;
+        this.vida = vida;
+
+    }
+
     public void addEstamina(int Estamina){
         this.Estamina += Estamina;
         if (Estamina<0) {

@@ -33,9 +33,13 @@ public class historia{
             sobrevivente.getEstamina();
         } 
         else{
+            
+            //criando um personagem carangueijo gigante 
+            personagem carangueijo = new personagem("carangueijo gigante","animal marinho",100,50);
+            int danoCarangueijo = carangueijo.dano;//pegando o valor do dano do carangueijo
             output("\nVocê joga uma pedra nele e ele se assusta, se tornando mais agressivo ainda,"+
             " ele se aproxima e te ataca.");
-            sobrevivente.addVida(-100);
+            sobrevivente.addVida(-danoCarangueijo);//tirando a vida do sobrevivente de acordo com o dano do carangueijo
         }      
 
         input.close();
